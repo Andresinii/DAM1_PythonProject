@@ -4,35 +4,27 @@ Inicio
     Lee n2
     
     Si (n2 == n1) entonces
-        Escribe "ERROR"
+        Escribe "ERROR: Los numeros no pueden ser iguales!"
     sino    
         Si (n1<n2) entonces
-            Escribe "El primer número es el menor."
-        sino
-            Escribe "El segundo número es el menor.")
-
+            diferencia = n2-n1
+            Escribe "El número menor es el n1 y entre ellos existen diferencia números enteros"
+        sino si (n2<n1)
+            diferencia = n1-n2
+            Escribe "El número menor es el n2 y entre ellos existen diferencia números enteros"
 Fin
 """
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 n1 = int(input("Introduzca un número: "))
 n2 = int(input("Introduzca otro: "))
 
-if n1<n2:
-    print("El primer número ("+ str(n1)+") es el menor.")
-elif n2<n1:
-    print("El segundo número ("+ str(n2)+") es el menor.")
+if n1 == n2:
+    print("ERROR: Los numeros no pueden ser iguales!")
+else:
+    if n1<n2:
+        diferencia = n2-n1
+        print("El número menor es el",n1,"y entre ellos existen",diferencia,"números enteros")
+    else:
+        diferencia = n1-n2
+        print("El número menor es el",n2,"y entre ellos existen",diferencia,"números enteros")
     
