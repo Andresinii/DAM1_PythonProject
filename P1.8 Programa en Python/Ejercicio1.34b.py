@@ -2,9 +2,10 @@ num = 3
 
 total = int(input("Dime cuántos números debe tener la serie: "))
 
-final = num * total
-while num <= final:
+cont = 1
+while cont<=total:
     print(num,end="")
-    if num < final:
+    if cont<total:
         print(" ",end="")
     num = num + 3
+    cont = cont + 1

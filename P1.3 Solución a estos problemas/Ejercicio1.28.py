@@ -9,7 +9,7 @@ Inicio
         Si (n1<n2) entonces
             diferencia = n2-n1
             Escribe "El número menor es el n1 y entre ellos existen diferencia números enteros"
-        sino si (n2<n1)
+        sino
             diferencia = n1-n2
             Escribe "El número menor es el n2 y entre ellos existen diferencia números enteros"
 Fin

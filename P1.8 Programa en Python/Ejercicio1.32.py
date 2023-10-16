@@ -1,14 +1,17 @@
 x = int(input("Introduce un número: "))
 y = int(input("Introduce otro: "))
 
-if x >= y: 
+if x <= y: 
     numIni = x
-    numFin = y - 1
+    numFin = y
 else:
     numIni = y
-    numFin = x - 1
+    numFin = x
 
-for i in (numIni,numFin):
-    print(str(i) + "")
+while numIni <= numFin:
+    print(numIni,end="")
     if numIni != numFin:
-        print ("-")
+        print("-",end="")
+    numIni = numIni + 1
+
+    
